@@ -22,13 +22,13 @@ markup:
 params:
   title: "Jairo Sánchez Díaz-Concha"
   description: "Engineering student focused on data analysis, simulation, and mathematical modeling for the optimization of real-world systems."
-  favicon: "/fav.png"
+  # Corregido: Las rutas en Hugo no deben incluir la palabra 'static'
+  favicon: "/JSDC.png?v=1"
 
   useBootstrapCDN: false
-  mathjax: false
+  mathjax: true # Activado para tus fórmulas de ingeniería
   animate: true
 
-  # En Hugo, lo correcto es referenciar desde /css/ si el archivo está en /static/css/
   customCSS:
     - "/css/main.css"
 
@@ -39,7 +39,8 @@ params:
   navbar:
     align: ms-auto
     showBrandLogo: true
-    brandLogo: "/fav.png"
+    # Corregido: Ruta directa y cache-busting
+    brandLogo: "/JSDC.png?v=1"
     brandName: "Jairo Sánchez Díaz-Concha"
     disableSearch: true
     stickyNavBar:
@@ -60,6 +61,7 @@ params:
     title: "Jairo Sánchez Díaz-Concha"
     subtitle: "Mathematical Engineering student"
     content: "Engineering student focused on data analysis, simulation, and mathematical modeling for the optimization of real-world systems."
+    # Asegúrate de que esta ruta sea correcta dentro de static/images/projects/
     image: "/images/projects/foto de perfil.jpeg"
     bottomImage:
       enable: true
@@ -70,7 +72,7 @@ params:
         - icon: fab fa-github
           url: "https://github.com/jairo-sanchez-diaz-concha"
         - icon: fab fa-linkedin
-          url: "https://www.linkedin.com/"
+          url: "https://www.linkedin.com/in/jairo-sanchez-diaz-concha"
 
   about:
     enable: true
@@ -87,16 +89,12 @@ params:
       ---
       **Core skills**
 
-      **Languages**  
-      Python · Julia  
+      **Languages** Python · Julia  
 
-      **Scientific computing & data analysis**  
-      NumPy · Pandas · Matplotlib 
+      **Scientific computing & data analysis** NumPy · Pandas · Matplotlib 
 
-      **Methods**  
-      Data analysis · Simulation · Mathematical modeling · Optimization  
+      **Methods** Data analysis · Simulation · Mathematical modeling · Optimization  
 
-  
   education:
     enable: true
     index: false
@@ -114,22 +112,12 @@ params:
           real systems into mathematical and computational models, with a strong focus
           on analysis, simulation, and optimization.
 
-
-
-
-  achievements:
-    enable: false
-
-  skills:
-    enable: true
-
   projects:
     enable: true
     title: "Projects"
     items:
       - title: "Bank Customer Analysis"
-        content: "Exploratory and statistical analysis of bank customer data, combined with a
-          predictive model to estimate risk at the individual client level."
+        content: "Exploratory and statistical analysis of bank customer data, combined with a predictive model to estimate risk at the individual client level."
         image: "/images/projects/imagen-correlaciones-banco.png"
         featured:
           name: "GitHub"
@@ -139,12 +127,12 @@ params:
           - "Python"
           - "Pandas"
           - "Matplotlib"
-          - "kaggle"
+          - "Kaggle"
         links:
           - icon: fab fa-github
             url: "https://github.com/jairo-sanchez-diaz-concha/Estudio-de-clientes-de-un-banco"
           - icon: fab fa-linkedin
-            url: "https://www.linkedin.com/posts/jairo-sanchez-diaz-concha_acabo-de-subir-a-github-un-proyecto-grupal-share-7419843956475338752-feKB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGOQXr4B9nVWN1mAPDzv5_Q3w51xScC_aGw"
+            url: "https://www.linkedin.com/posts/jairo-sanchez-diaz-concha_acabo-de-subir-a-github-un-proyecto-grupal-share-7419843956475338752-feKB"
 
   contact:
     enable: true
@@ -156,28 +144,4 @@ params:
   footer:
     socialNetworks:
       github: "https://github.com/jairo-sanchez-diaz-concha"
-      linkedin: "https://www.linkedin.com/"
-
-  listPages:
-    disableFeaturedImage: false
-
-  singlePages:
-    socialShare: false
-    readTime:
-      enable: false
-    scrollprogress:
-      enable: true
-    tags:
-      openInNewTab: true
-
-  terms:
-    read: "Read"
-    toc: "Table of Contents"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
-
-  datesFormat:
-    article: "Jan 2, 2006"
-    articleList: "Jan 2, 2006"
-    articleRecent: "Jan 2, 2006"
+      linkedin: "https://www.linkedin.com/in/jairo-sanchez-diaz-concha"
