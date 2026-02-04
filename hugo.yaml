@@ -23,7 +23,7 @@ params:
   title: "Jairo Sánchez Díaz-Concha"
   description: "Engineering student focused on data analysis, simulation, and mathematical modeling for the optimization of real-world systems."
   # Corregido: Las rutas en Hugo no deben incluir la palabra 'static'
-  favicon: "/logos.png"
+  favicon: "/JSDC.png"
 
   useBootstrapCDN: false
   mathjax: true # Activado para tus fórmulas de ingeniería
@@ -40,7 +40,7 @@ params:
     align: ms-auto
     showBrandLogo: true
     # Corregido: Ruta directa y cache-busting
-    brandLogo: "/JSDC.png?v=1"
+    brandLogo: "/JSDC.png"
     brandName: "Jairo Sánchez Díaz-Concha"
     disableSearch: true
     stickyNavBar:
