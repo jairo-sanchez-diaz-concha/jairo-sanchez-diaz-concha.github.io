@@ -118,7 +118,7 @@ params:
     items:
       - title: "Bank Customer Analysis"
         content: "Exploratory and statistical analysis of bank customer data, combined with a predictive model to estimate risk at the individual client level."
-        image: "/images/projects/Imagen-correlaciones-banco.png"
+        image: "/Imagen-correlaciones-banco.png"
         featured:
           name: "GitHub"
           link: "https://github.com/jairo-sanchez-diaz-concha/Estudio-de-clientes-de-un-banco"
